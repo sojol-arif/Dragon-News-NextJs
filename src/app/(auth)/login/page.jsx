@@ -27,6 +27,13 @@ const Login = () => {
         });
 
         console.log(res, error);
+
+        if (error) {
+            alert(error.message);
+        }
+        if (res) {
+            alert('Sign In Successfull')
+        }
     }
 
     console.log(errors);
